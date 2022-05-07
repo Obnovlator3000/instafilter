@@ -9,7 +9,7 @@ model_location = Path(__file__).resolve().parent / "models"
 
 
 class Instafilter:
-    def __init__(self, name, device="cuda", batch_size=2 ** 16):
+    def __init__(self, name, device="cpu", batch_size=2 ** 16):
         """
         Load an instafilter for processing.
         name must be one from Instafilter.get_models()
